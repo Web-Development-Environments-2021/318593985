@@ -17,7 +17,8 @@
     background-color:#1faf92;
       }
 #menu li {
-      float: right;
+	  float: right;
+	  
       }
 #menu a {
     display: block;
@@ -25,7 +26,8 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-family: Calibri, sans-serif;
+	font-family: Calibri, sans-serif;
+	font-size: 18px;
       }
 #menu a:hover{
         background-color:rgba(241, 167, 28, 0.932);
@@ -77,12 +79,12 @@ ul, li{
   /* Position the image container (needed to position the left and right arrows) */
   .container {
 	position: relative;
+	margin: 0 auto;
   }
   
   /* Hide the images by default */
   .mySlides {
 	display: none;
-	float: center;
   }
   
   /* Add a pointer when hovering over the thumbnail images */
@@ -125,6 +127,7 @@ ul, li{
 	font-size: 12px;
 	padding: 8px 12px;
 	position: absolute;
+	float:none;
 	top: 0;
   }
   
@@ -157,5 +160,6 @@ ul, li{
   .demo:hover {
 	opacity: 1;
   }
+
 
 
