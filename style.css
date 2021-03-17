@@ -14,7 +14,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color:#1faf92;
+	background-color:#1faf92;
       }
 #menu li {
 	  float: right;
@@ -32,6 +32,7 @@
 #menu a:hover{
         background-color:rgba(241, 167, 28, 0.932);
 }
+
 h1 
 { 
 	width:100%;
@@ -47,10 +48,13 @@ h1 span{
  	padding:0 10px;
 }
 body{
-    background-color:rgb(248, 246, 246);
+	background-color:rgb(248, 246, 246);
+	margin: 0;
+
 }
 #text{
-    float:right;
+	float:right;
+	margin-right: 30px;
 
 }
 table, th, td {
@@ -80,56 +84,23 @@ ul, li{
   .container {
 	position: relative;
 	margin: 0 auto;
+	position: initial;
+  color: white;
   }
   
   /* Hide the images by default */
   .mySlides {
 	display: none;
+
+  
   }
   
   /* Add a pointer when hovering over the thumbnail images */
   .cursor {
 	cursor: pointer;
   }
+
   
-  /* Next & previous buttons */
-  .prev,
-  .next {
-	cursor: pointer;
-	position: absolute;
-	top: 40%;
-	width: auto;
-	padding: 16px;
-	margin-top: -50px;
-	color: white;
-	font-weight: bold;
-	font-size: 20px;
-	border-radius: 0 3px 3px 0;
-	user-select: none;
-	-webkit-user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-	right: 0;
-	border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-	background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-	color: #f2f2f2;
-	font-size: 12px;
-	padding: 8px 12px;
-	position: absolute;
-	float:none;
-	top: 0;
-  }
   
   /* Container for image text */
   .caption-container {
@@ -143,6 +114,7 @@ ul, li{
 	content: "";
 	display: table;
 	clear: both;
+
   }
   
   /* Six columns side by side */
@@ -152,13 +124,21 @@ ul, li{
   }
   
   /* Add a transparency effect for thumnbail images */
-  .demo {
-	opacity: 0.6;
+  .demo:hover {
+	opacity:0.6;
   }
   
   .active,
-  .demo:hover {
+  :hover {
 	opacity: 1;
+  }
+
+  #likeButton{
+	margin: 0 auto;
+
+  }
+  #pic{
+	  position:unset;
   }
 
 
