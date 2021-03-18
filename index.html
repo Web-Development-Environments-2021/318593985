@@ -3,7 +3,14 @@
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<meta charset="utf-8">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src='inputEmoji.js'></script>
+	<script>
+		$(function () {
+			$('textarea').emoji({place: 'after'});
+		})
+	</script>
 </head>
 <body>
   <div id="fb-root"></div>
@@ -19,7 +26,7 @@
           <li><a href="#spa"><span>שאלות&תשובות</span></a></li>
           <li><a href="#contact"><span>צרו קשר</span></a></li>
           <li id="grandma" background-position="left"></li>
-          <img position="left" style="float:left;" src= "grandma.png" width="45" height="45" >
+          <img position="left" style="float:left; padding: 4px;" src= "grandma.png" width="50" height="50" >
           </ul>
           
       </div>
@@ -36,9 +43,9 @@
       <br>
       <span id="text">
         <p style="text-align: right;"><strong><span style="text-shadow: rgb(164, 218, 214) 0px -2px 20px; font-size: 22px; font-family: Calibri, sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; חנה סימינובסקי</span></strong></p>
-<p style="text-align: right;"><span style="font-family: Calibri, sans-serif;"><strong><span style="font-size: 18px;">&nbsp; &nbsp; </span></strong><u><strong><span style="font-size: 18px;">ארץ מוצא:</span></strong></u><span style="font-size: 18px;">&nbsp;.פולין<br><strong>&nbsp; &nbsp; <u>גיל:</u></strong> <br><strong>&nbsp; &nbsp; <u>שפות:</u>&nbsp;</strong>.עברית, אנגלית, צרפתית, גרמנית, יידיש וספרדית</span></span><br><span style="font-family: Calibri, sans-serif;"><span style="font-size: 18px;"><strong>&nbsp; &nbsp; </strong><u><strong>תחביבים:</strong></u> .לימוד שפות, לרקוד, לאפות ולטייל בארץ ובעולם</span></span></p>
-<p style="text-align: right;"><span style="font-family: Calibri, sans-serif;"><span style="font-size: 18px;"><strong>&nbsp; &nbsp; קצת היסטוריה-</strong></span></span><br><br></p>
-              </span>
+<p style="text-align: right;"><span style="font-family: Calibri, sans-serif;"><strong><span style="font-size: 18px;">&nbsp; &nbsp; </span></strong><u><strong><span style="font-size: 18px;">ארץ מוצא:</span></strong></u><span style="font-size: 18px;">&nbsp;פולין<br><strong>&nbsp; &nbsp; <u>שפות:</u>&nbsp;</strong>עברית, אנגלית, צרפתית, גרמנית, יידיש וספרדית</span></span><br><span style="font-family: Calibri, sans-serif;"><span style="font-size: 18px;"><strong>&nbsp; &nbsp; </strong><u><strong>תחביבים:</strong></u> לימוד שפות, לרקוד, לאפות ולטייל בארץ ובעולם</span></span></p>
+<p style="text-align: right;"><span style="font-family: Calibri, sans-serif;"><span style="font-size: 18px;"><strong>&nbsp; &nbsp; קצת היסטוריה-</strong></span></span></p>
+      </span>
       <br>
       <br>
       <br>
@@ -52,61 +59,118 @@
       <br>
       <br>
       <br>
-      <h1><span>התמונות שלי </span></h1>
+      <h1><span>התמונות שלי</span></h1>
       <br>
       <br>
-      <div class="pic" id="pic">
-      <div class="container" style="width:60%" >
-        <div class="mySlides" align="center">
-          <img src="1.jpeg" style="height: 366px;">
+      <p style="text-align: center;"><span style="font-family: Calibri, sans-serif;"><span style="font-size: 18px;"><em>-מומלץ ללחוץ על התמונות לקבלת תצוגה גדולה והסבר קצר על התמונה-</em></span></span></p>
+      <br>
+      <div class="row">
+        <div class="column">
+          <img src="1.jpeg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          <img src="2.jpeg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+          <img  src="3.jpeg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
         </div>
-      
-        <div class="mySlides" align="center">
-          <img src="2.jpeg" style="height: 366px;">
+        <div class="column">
+          <img src="4.jpeg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+          <img src="5.jpeg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
         </div>
-      
-        <div class="mySlides" align="center">
-          <img src="3.jpeg" style="height: 366px;">
+        <div class="column">
+          <img src="6.jpeg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+          <img src="7.jpeg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+          <img src="8.jpeg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
         </div>
-          
-        <div class="mySlides" align="center">
-          <img src="4.jpeg" style="height: 366px;">
+        <div class="column">
+          <img src="9.jpeg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+          <img src="10.jpeg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
         </div>
-      
-        <div class="mySlides" align="center">
-          <img src="5.jpeg" style="height: 366px;">
-        </div>
-          
-        <div class="mySlides" align="center">
-          <img src="6.jpeg" style="height: 400px;">
-        </div>
+      </div>
 
-        <div class="caption-container">
-          <p id="caption"></p>
-        </div>
-      
-        <div class="row">
-          <div class="column">
-            <img class="demo cursor" src="1.jpeg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+          <div class="mySlides">
+            <div class="numbertext">1 / 10</div>
+            <img src="1.jpeg" style="width:100%">
           </div>
-          <div class="column">
-            <img class="demo cursor" src="2.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+          <div class="mySlides">
+            <div class="numbertext">2 / 10</div>
+            <img src="2.jpeg" style="width:100%">
           </div>
-          <div class="column">
+          <div class="mySlides">
+            <div class="numbertext">3 / 10</div>
+            <img src="3.jpeg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">4 / 10</div>
+            <img src="4.jpeg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">5 / 10</div>
+            <img src="5.jpeg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">6 / 10</div>
+            <img src="6.jpeg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">7 / 10</div>
+            <img src="7.jpeg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">8 / 10</div>
+            <img src="8.jpeg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">9 / 10</div>
+            <img src="9.jpeg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">10 / 10</div>
+            <img src="10.jpeg" style="width:100%">
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+
+          <div class="column1">
+            <img class="demo cursor" src="1.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+          </div>
+          <div class="column1">
+            <img class="demo cursor" src="2.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+          </div>
+          <div class="column1">
             <img class="demo cursor" src="3.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
           </div>
-          <div class="column">
+          <div class="column1">
             <img class="demo cursor" src="4.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
           </div>
-          <div class="column">
-            <img class="demo cursor" src="5.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-          </div>    
-          <div class="column">
-            <img class="demo cursor" src="6.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+          <div class="column1">
+            <img class="demo cursor" src="5.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Northern Lights">
+          </div>
+          <div class="column1">
+            <img class="demo cursor" src="6.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Northern Lights">
+          </div>
+          <div class="column1">
+            <img class="demo cursor" src="7.jpeg" style="width:100%" onclick="currentSlide(7)" alt="Northern Lights">
+          </div>
+          <div class="column1">
+            <img class="demo cursor" src="8.jpeg" style="width:100%" onclick="currentSlide(8)" alt="Northern Lights">
+          </div>
+          <div class="column1">
+            <img class="demo cursor" src="9.jpeg" style="width:100%" onclick="currentSlide(9)" alt="Northern Lights">
+          </div>
+          <div class="column1">
+            <img class="demo cursor" src="10.jpeg" style="width:100%" onclick="currentSlide(10)" alt="Northern Lights">
           </div>
         </div>
       </div>
-    </div>
+
       <br>
   </section>	
   <section id="playlist" class="section">
@@ -184,33 +248,60 @@
     <br>
       <h1><span>צרו קשר </span></h1>
       <br>
-      <br>
-      <div align="center"><span style="font-family: Calibri, sans-serif; font-size: 19px;" size="28" align="center">לשליחת אימייל לחץ </span><a style="font-family: Calibri, sans-serif; font-size: 19px;" id="mail" href="mailto:Hadassaz@post.bgu.ac.il">כאן</a></div>
-      <br>
-      <br>
-      <div align="center"><picture>
-          <img src= "contact_us1.png"  width="140" height="30" >
-          <img src= "contact_us2.png"  width="140" height="30" >
-          <img src= "contact_us3.png"  width="140" height="30" >
-        </picture></div>
+      <div class="conect">
+        <form method="POST" enctype="text/plain" action="mailto:hadassaz@post.bgu.ac.il">
+          <label class="required" for="name" >Your name:</label><br>
+          <input style="border-radius: 10px; width: 300px; height: 30px; border: 1px solid gray;" id="name" class="input" name="name" type="text" placeholder="name"><br>
+          <label class="required" for="email">Your email:</label><br>
+          <input style="border-radius: 10px; width: 300px; height: 30px; border: 1px solid gray;"  id="email" class="input" name="email" type="text" placeholder="E-mail"><br>
+          <label class="required" for="message">Your message:</label><br>
+          <div class="form-group">
+            <textarea style="border-radius: 10px; width: 300px; height: 80px; margin-left: 25px;" name="mes" placeholder="type message here..." class="form-control"></textarea>
+            <div style="position: absolute; border: 1px solid gray; background-color: rgb(255, 255, 255); display: none;"><span style="cursor: pointer; font-size: 20px;">🙂</span><span style="cursor: pointer; font-size: 20px;">🙁</span><span style="cursor: pointer; font-size: 20px;">😀</span><span style="cursor: pointer; font-size: 20px;">😁</span><span style="cursor: pointer; font-size: 20px;">😂</span><span style="cursor: pointer; font-size: 20px;">😃</span><span style="cursor: pointer; font-size: 20px;">😄</span><span style="cursor: pointer; font-size: 20px;">😅</span><span style="cursor: pointer; font-size: 20px;">😆</span><span style="cursor: pointer; font-size: 20px;">😇</span><br><span style="cursor: pointer; font-size: 20px;">😈</span><span style="cursor: pointer; font-size: 20px;">😉</span><span style="cursor: pointer; font-size: 20px;">😊</span><span style="cursor: pointer; font-size: 20px;">😋</span><span style="cursor: pointer; font-size: 20px;">😌</span><span style="cursor: pointer; font-size: 20px;">😍</span><span style="cursor: pointer; font-size: 20px;">😎</span><span style="cursor: pointer; font-size: 20px;">😏</span><span style="cursor: pointer; font-size: 20px;">😐</span><span style="cursor: pointer; font-size: 20px;">😑</span><br><span style="cursor: pointer; font-size: 20px;">😒</span><span style="cursor: pointer; font-size: 20px;">😓</span><span style="cursor: pointer; font-size: 20px;">😔</span><span style="cursor: pointer; font-size: 20px;">😕</span><span style="cursor: pointer; font-size: 20px;">😖</span><span style="cursor: pointer; font-size: 20px;">😗</span><span style="cursor: pointer; font-size: 20px;">😘</span><span style="cursor: pointer; font-size: 20px;">😙</span><span style="cursor: pointer; font-size: 20px;">😚</span><span style="cursor: pointer; font-size: 20px;">😛</span><br><span style="cursor: pointer; font-size: 20px;">😜</span><span style="cursor: pointer; font-size: 20px;">😝</span><span style="cursor: pointer; font-size: 20px;">😞</span><span style="cursor: pointer; font-size: 20px;">😟</span><span style="cursor: pointer; font-size: 20px;">😠</span><span style="cursor: pointer; font-size: 20px;">😡</span><span style="cursor: pointer; font-size: 20px;">😢</span><span style="cursor: pointer; font-size: 20px;">😣</span><span style="cursor: pointer; font-size: 20px;">😤</span><span style="cursor: pointer; font-size: 20px;">😥</span><br><span style="cursor: pointer; font-size: 20px;">😦</span><span style="cursor: pointer; font-size: 20px;">😧</span><span style="cursor: pointer; font-size: 20px;">😨</span><span style="cursor: pointer; font-size: 20px;">😩</span><span style="cursor: pointer; font-size: 20px;">😪</span><span style="cursor: pointer; font-size: 20px;">😫</span><span style="cursor: pointer; font-size: 20px;">😬</span><span style="cursor: pointer; font-size: 20px;">😭</span><span style="cursor: pointer; font-size: 20px;">😮</span><span style="cursor: pointer; font-size: 20px;">😯</span><br><span style="cursor: pointer; font-size: 20px;">😰</span><span style="cursor: pointer; font-size: 20px;">😱</span><span style="cursor: pointer; font-size: 20px;">😲</span><span style="cursor: pointer; font-size: 20px;">😳</span><span style="cursor: pointer; font-size: 20px;">😴</span><span style="cursor: pointer; font-size: 20px;">😵</span><span style="cursor: pointer; font-size: 20px;">😶</span><span style="cursor: pointer; font-size: 20px;">😷</span><span style="cursor: pointer; font-size: 20px;">😸</span><span style="cursor: pointer; font-size: 20px;">😹</span><br><span style="cursor: pointer; font-size: 20px;">😺</span><span style="cursor: pointer; font-size: 20px;">😻</span><span style="cursor: pointer; font-size: 20px;">😼</span><span style="cursor: pointer; font-size: 20px;">😽</span><span style="cursor: pointer; font-size: 20px;">😾</span><span style="cursor: pointer; font-size: 20px;">😿</span><span style="cursor: pointer; font-size: 20px;">🙀</span><span style="cursor: pointer; font-size: 20px;">🙃</span><span style="cursor: pointer; font-size: 20px;">💩</span><span style="cursor: pointer; font-size: 20px;">🙄</span><br><span style="cursor: pointer; font-size: 20px;">☠</span><span style="cursor: pointer; font-size: 20px;">👌</span><span style="cursor: pointer; font-size: 20px;">👍</span><span style="cursor: pointer; font-size: 20px;">👎</span><span style="cursor: pointer; font-size: 20px;">🙈</span><span style="cursor: pointer; font-size: 20px;">🙉</span><span style="cursor: pointer; font-size: 20px;">🙊</span></div>
+          </div>
+          <input class="button" id="submit_button" type="submit" value="Send email">
+          <input class="button" id="reset_button" type="reset" value="Reset">
+        </form>
+        </div>
       <br>
       <br>
       <p id="goodbay" style="text-align: center;"><span style="font-family: Calibri, sans-serif;"><strong><span style="font-size: 30px;"><em>!תודה שביקרתם</em></span></strong></span></p>
         <br>
         <br>
   </section>
+
+<script type="text/javascript">
+$(function(){
+  $("#nav a").click(function(e){
+  e.preventDefault();
+  $('html,body').scrollTo(this.hash,this.hash); 
+  });
+});
+</script>
+<script type="text/javascript">
+  $(document).scroll(function() {
+  $('#menu').toggle($(this).scrollTop()>1000)
+  });​
+  </script>
+
   <script>
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    
     var slideIndex = 1;
     showSlides(slideIndex);
     
     function plusSlides(n) {
       showSlides(slideIndex += n);
     }
-    
     function currentSlide(n) {
       showSlides(slideIndex = n);
     }
-    
     function showSlides(n) {
       var i;
       var slides = document.getElementsByClassName("mySlides");
@@ -229,19 +320,12 @@
       captionText.innerHTML = dots[slideIndex-1].alt;
     }
     </script>
-<script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
-  });
-});
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous">
 </script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
+<script src='inputEmoji.js'></script>
+
 </body>
 
 </html>
