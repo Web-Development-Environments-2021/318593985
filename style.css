@@ -9,6 +9,7 @@
       position: fixed;
       right: 0%;
 }
+
 #menu ul {
     list-style-type: none;
     margin: 0;
@@ -21,7 +22,7 @@
 	  
       }
 #menu a {
-    display: block;
+    display: inline-block;
     color: white;
     text-align: center;
     padding: 14px 16px;
