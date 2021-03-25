@@ -52,7 +52,7 @@ h1 span{
 body{
 	background-color:rgb(248, 246, 246);
 	margin: 0;
-    display: block;
+    display: fixed;
     margin: 8px;
 
 }
